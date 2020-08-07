@@ -26,8 +26,8 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200806185328808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200806185926819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-08-07T07:10:25.000Z">
-<meta property="article:modified_time" content="2020-08-07T07:13:17.457Z">
-<meta property="article:author" content="北野">
+<meta property="article:modified_time" content="2020-08-07T14:30:35.073Z">
+<meta property="article:author" content="北 野">
 <meta property="article:tag" content="数据结构 c++">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200806182200804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70">
@@ -258,15 +258,15 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <p> <font size="5px">说明：实现采用<font size = "4px" color ="#FF0033"> <em>C++</em> </font> 实现，所列目录均已完全实现。在实现过程中，使用到了引用符号<font size = "4px" color ="#FF0033"> <em>&amp;</em> </font>，通过对表的引用进行操作以及数组传参的知识。 本次操作是考研复习数据结构的一次复习，若有不足之处，欢迎指正。</font><br> <a id="more"></a></p>
-<h1 id="1-初始化"><a href="#1-初始化" class="headerlink" title="1. 初始化"></a>1. 初始化</h1><p>说明：通过对线性表结构的初始化实现一个数据结构。同时，对结构里的空间赋值为0，避免产生脏数据。<img src="https://img-blog.csdnimg.cn/20200806182200804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="2-创建线性表"><a href="#2-创建线性表" class="headerlink" title="2. 创建线性表"></a>2. 创建线性表</h1><p>说明：将数据作为参数进行传递，实现数据入表。因为初始建表时，未知表长。因此将一并将表长length作为参数传递。<img src="https://img-blog.csdnimg.cn/20200806183419563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="3-插入操作"><a href="#3-插入操作" class="headerlink" title="3. 插入操作"></a>3. 插入操作</h1><p>说明：i，为插入位置，e，为插入值。通过循环找到<font size = "4px" color ="#FF0033">  <em>i</em>  </font>的位置，将 <font color="#FF0033" ><em>e</em></font> 插入，同时，i之后的所有数都要往后移，且length+1。<br><img src="https://img-blog.csdnimg.cn/20200806183902540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="4-删除操作"><a href="#4-删除操作" class="headerlink" title="4. 删除操作"></a>4. 删除操作</h1><p>说明：将参数<font size = "4px" color ="#FF0033"> <em>i</em> </font>作为删除位置传递，并通过<font size = "4px" color ="#FF0033"><em>e</em></font>返回删除值.然后<font size = "4px" color ="#FF0033"> <em>i</em> </font>之后的值都往前移，且length-1。<img src="https://img-blog.csdnimg.cn/20200806184712231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="5-按值查找"><a href="#5-按值查找" class="headerlink" title="5. 按值查找"></a>5. 按值查找</h1><p>说明：通过输入的<font size = "4px" color ="#FF0033"> <em>e</em> </font> 的值作为参数，进入表中查找该数是否存在。若是，返回其位置下标，若不是，返回<font size = "4px" color ="#FF0033"> <em>-1</em> </font>。<br><img src="https://img-blog.csdnimg.cn/20200806184952576.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="6-按位查找"><a href="#6-按位查找" class="headerlink" title="6. 按位查找"></a>6. 按位查找</h1><p>说明：将<font size = "4px" color ="#FF0033"> <em>i</em> </font> 的输入作为查找位置，再用<font size = "4px" color ="#FF0033"> <em>e</em> </font> 返回其位置相对应的数。否则返回<font size = "4px" color ="#FF0033"> <em>-1</em> </font>。<img src="https://img-blog.csdnimg.cn/20200806185156695.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="7-打印线性表"><a href="#7-打印线性表" class="headerlink" title="7. 打印线性表"></a>7. 打印线性表</h1><p>说明：设置一个<font size = "4px" color ="#FF0033"> <em>flag</em> </font> 标志，通过该标志判断当前表的状态，并将其打印出来。<br><img src="https://img-blog.csdnimg.cn/20200806185328808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="8-主函数操作"><a href="#8-主函数操作" class="headerlink" title="8. 主函数操作"></a>8. 主函数操作</h1><p>说明：主函数中很大一部分封装在不同方法中使用，由于时间原因，暂时就这样吧（代码有点长了，可阅读性不太好）。<br><img src="https://img-blog.csdnimg.cn/20200806185926819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+    <p>说明：实现采用<font size="4px" color="#FF0033"> <em>C++</em> </font> 实现，所列目录均已完全实现。在实现过程中，使用到了引用符号<font size="4px" color="#FF0033"> <em>&amp;</em> </font>，通过对表的引用进行操作以及数组传参的知识。 本次操作是考研复习数据结构的一次复习，若有不足之处，欢迎指正。<br> <a id="more"></a></p>
+<h2><span id="1-初始化">1. 初始化</span></h2><p>说明：通过对线性表结构的初始化实现一个数据结构。同时，对结构里的空间赋值为0，避免产生脏数据。<img src="https://img-blog.csdnimg.cn/20200806182200804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2><span id="2-创建线性表">2. 创建线性表</span></h2><p>说明：将数据作为参数进行传递，实现数据入表。因为初始建表时，未知表长。因此将一并将表长length作为参数传递。<img src="https://img-blog.csdnimg.cn/20200806183419563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="3-插入操作">3. 插入操作</span></h1><p>说明：i，为插入位置，e，为插入值。通过循环找到<font size="4px" color="#FF0033">  <em>i</em>  </font>的位置，将 <font color="#FF0033"><em>e</em></font> 插入，同时，i之后的所有数都要往后移，且length+1。<br><img src="https://img-blog.csdnimg.cn/20200806183902540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="4-删除操作">4. 删除操作</span></h1><p>说明：将参数<font size="4px" color="#FF0033"> <em>i</em> </font>作为删除位置传递，并通过<font size="4px" color="#FF0033"><em>e</em></font>返回删除值.然后<font size="4px" color="#FF0033"> <em>i</em> </font>之后的值都往前移，且length-1。<img src="https://img-blog.csdnimg.cn/20200806184712231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="5-按值查找">5. 按值查找</span></h1><p>说明：通过输入的<font size="4px" color="#FF0033"> <em>e</em> </font> 的值作为参数，进入表中查找该数是否存在。若是，返回其位置下标，若不是，返回<font size="4px" color="#FF0033"> <em>-1</em> </font>。<br><img src="https://img-blog.csdnimg.cn/20200806184952576.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="6-按位查找">6. 按位查找</span></h1><p>说明：将<font size="4px" color="#FF0033"> <em>i</em> </font> 的输入作为查找位置，再用<font size="4px" color="#FF0033"> <em>e</em> </font> 返回其位置相对应的数。否则返回<font size="4px" color="#FF0033"> <em>-1</em> </font>。<img src="https://img-blog.csdnimg.cn/20200806185156695.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="7-打印线性表">7. 打印线性表</span></h1><p>说明：设置一个<font size="4px" color="#FF0033"> <em>flag</em> </font> 标志，通过该标志判断当前表的状态，并将其打印出来。<br><img src="https://img-blog.csdnimg.cn/20200806185328808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1><span id="8-主函数操作">8. 主函数操作</span></h1><p>说明：主函数中很大一部分封装在不同方法中使用，由于时间原因，暂时就这样吧（代码有点长了，可阅读性不太好）。<br><img src="https://img-blog.csdnimg.cn/20200806185926819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 
     
 
@@ -309,7 +309,7 @@
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
-          北野
+          北 野
         </li>
         <li>
           <strong>本文链接：</strong>
@@ -328,6 +328,11 @@
 
   </div>
   <div class="article-info article-info-index">
+    
+    <div class="article-pop-out tagcloud">
+      <i class="icon-tuding"></i>
+      <a class="article-tag-list-link color3">置顶</a>
+    </div>
     
     
 	<div class="article-tag tagcloud">
@@ -404,6 +409,20 @@
 </article>
 
 
+<nav id="article-nav">
+  
+    <a href="/2020/08/07/Github-Page-hexo-%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E5%88%97%E7%AC%AC%E4%B8%80%E5%BC%B9/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Github Page + hexo 搭建博客系列第一弹
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -417,6 +436,19 @@
             </div>
         </div>
         
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">1. 初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">2. 创建线性表</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">3. 插入操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">4. 删除操作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">5. 按值查找</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">6. 按位查找</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">7. 打印线性表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number"></span> <span class="toc-text">8. 主函数操作</span></a>
+                    </div>
+                </span>
+            </div>
+        </div>
         
     </div>
 </aside>
@@ -441,7 +473,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 <a href="https://github.com/wgy30/wgy30.github.io/tree/master/" target="_blank">北野</a>
+    		&copy; 2020 <a href="https://github.com/wgy30/wgy30.github.io/tree/master/" target="_blank">北 野</a>
     	</div>
       	<div class="footer-right">
 			
@@ -558,6 +590,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">博客搭建</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">数据结构 c++</a>
