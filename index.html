@@ -78,7 +78,7 @@
 		<nav class="header-menu">
 			<ul>
 			
-				<li><a href="/" target="_blank">主页</a></li>
+				<li><a href="https://wgy30.github.io/" target="_blank">主页</a></li>
 			
 				<li><a href="/%E2%80%9C#%E2%80%9D" target="_blank">技术笔记</a></li>
 			
@@ -178,7 +178,7 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a target="_blank" rel="noopener" href="https://wgy30.github.io/">主页</a></li>
 		        
 					<li style="width: 33.333333333333336%"><a href="/%E2%80%9C#%E2%80%9D">技术笔记</a></li>
 		        
@@ -204,18 +204,34 @@
     <article id="post-线性表的顺序存储——静态分配方式实现（完整）" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2020/08/07/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%AE%8C%E6%95%B4%EF%BC%89/" target="_blank">线性表的顺序存储————静态分配方式实现（完整）</a>
+  
+    </h1>
+  
+
+
+  
+  
+<a href="/2020/08/07/%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E2%80%94%E2%80%94%E9%9D%99%E6%80%81%E5%88%86%E9%85%8D%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%EF%BC%88%E5%AE%8C%E6%95%B4%EF%BC%89/" class="archive-article-date">
+        <time datetime="2020-08-07T06:38:44.199Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-07</time>
+</a>
+
+  
+  
+    
+
+  
+  </header>
+  
   <div class="article-entry" itemprop="articleBody">
     
-    <p>@<a href="%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95">TOC</a><br> <font size="5px">说明：实现采用<font size = "4px" color ="#FF0033"> <em>C++</em> </font> 实现，所列目录均已完全实现。在实现过程中，使用到了引用符号<font size = "4px" color ="#FF0033"> <em>&amp;</em> </font>，通过对表的引用进行操作以及数组传参的知识。 本次操作是考研复习数据结构的一次复习，若有不足之处，欢迎指正。</font></p>
-<h1 id="1-初始化"><a href="#1-初始化" class="headerlink" title="1. 初始化"></a>1. 初始化</h1><p>说明：通过对线性表结构的初始化实现一个数据结构。同时，对结构里的空间赋值为0，避免产生脏数据。<img src="https://img-blog.csdnimg.cn/20200806182200804.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="2-创建线性表"><a href="#2-创建线性表" class="headerlink" title="2. 创建线性表"></a>2. 创建线性表</h1><p>说明：将数据作为参数进行传递，实现数据入表。因为初始建表时，未知表长。因此将一并将表长length作为参数传递。<img src="https://img-blog.csdnimg.cn/20200806183419563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="3-插入操作"><a href="#3-插入操作" class="headerlink" title="3. 插入操作"></a>3. 插入操作</h1><p>说明：i，为插入位置，e，为插入值。通过循环找到<font size = "4px" color ="#FF0033">  <em>i</em>  </font>的位置，将 <font color="#FF0033" ><em>e</em></font> 插入，同时，i之后的所有数都要往后移，且length+1。<br><img src="https://img-blog.csdnimg.cn/20200806183902540.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="4-删除操作"><a href="#4-删除操作" class="headerlink" title="4. 删除操作"></a>4. 删除操作</h1><p>说明：将参数<font size = "4px" color ="#FF0033"> <em>i</em> </font>作为删除位置传递，并通过<font size = "4px" color ="#FF0033"><em>e</em></font>返回删除值.然后<font size = "4px" color ="#FF0033"> <em>i</em> </font>之后的值都往前移，且length-1。<img src="https://img-blog.csdnimg.cn/20200806184712231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="5-按值查找"><a href="#5-按值查找" class="headerlink" title="5. 按值查找"></a>5. 按值查找</h1><p>说明：通过输入的<font size = "4px" color ="#FF0033"> <em>e</em> </font> 的值作为参数，进入表中查找该数是否存在。若是，返回其位置下标，若不是，返回<font size = "4px" color ="#FF0033"> <em>-1</em> </font>。<br><img src="https://img-blog.csdnimg.cn/20200806184952576.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="6-按位查找"><a href="#6-按位查找" class="headerlink" title="6. 按位查找"></a>6. 按位查找</h1><p>说明：将<font size = "4px" color ="#FF0033"> <em>i</em> </font> 的输入作为查找位置，再用<font size = "4px" color ="#FF0033"> <em>e</em> </font> 返回其位置相对应的数。否则返回<font size = "4px" color ="#FF0033"> <em>-1</em> </font>。<img src="https://img-blog.csdnimg.cn/20200806185156695.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="7-打印线性表"><a href="#7-打印线性表" class="headerlink" title="7. 打印线性表"></a>7. 打印线性表</h1><p>说明：设置一个<font size = "4px" color ="#FF0033"> <em>flag</em> </font> 标志，通过该标志判断当前表的状态，并将其打印出来。<br><img src="https://img-blog.csdnimg.cn/20200806185328808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h1 id="8-主函数操作"><a href="#8-主函数操作" class="headerlink" title="8. 主函数操作"></a>8. 主函数操作</h1><p>说明：主函数中很大一部分封装在不同方法中使用，由于时间原因，暂时就这样吧（代码有点长了，可阅读性不太好）。<br><img src="https://img-blog.csdnimg.cn/20200806185926819.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1NzQ4MDgy,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-
+    <p> <font size="5px">说明：实现采用<font size = "4px" color ="#FF0033"> <em>C++</em> </font> 实现，所列目录均已完全实现。在实现过程中，使用到了引用符号<font size = "4px" color ="#FF0033"> <em>&amp;</em> </font>，通过对表的引用进行操作以及数组传参的知识。 本次操作是考研复习数据结构的一次复习，若有不足之处，欢迎指正。</font><br>
+    
     
 
     
@@ -226,6 +242,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数据结构 c++</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -387,6 +414,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">数据结构 c++</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
